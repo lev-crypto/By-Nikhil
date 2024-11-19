@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    width: 100%;
+}
+
+nav {
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(150, 112, 112, 0.8); /* Slight transparency for blur effect */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    backdrop-filter: blur(100px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(100px); /* For Safari support */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle pop */
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.logo:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+
+.sliding-images {
+    
+    overflow: hidden;
+    width: 100%; /* Full width */
+    height: calc(100vw * 9 / 16); /* Maintain 16:9 aspect ratio for most screens */
+    max-height: 800px;
+    position: relative;
+    margin: 0; /* Remove margins for full-width alignment */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+.slider {
+    margin-top: 3px;
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+    gap: 3px;
+}
+
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+.about-us {
+    margin: 0 auto;
+    max-width: 1450px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.about-us h2 {
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.products {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact-us {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact-us h2 {
+    margin-bottom: 20px;
+}
+
+
+.contact-details {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact-details p {
+    color: rgb(0, 0, 0);
+}
+
+.map-container {
+    margin: 0 auto;
+    max-width: 1050px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+footer {
+    color: #ffffff;
+    margin: 0px; /* Center horizontally and add bottom margin */
+    margin-bottom: 2xpx;
+    text-align: center; /* Center text inside the footer */
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: center; /* Center horizontally within the footer */
+    align-items: center; /* Center vertically within the footer */
+    background-color: rgba(150, 112, 112, 0.8); /* Slight transparency for blur effect */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    backdrop-filter: blur(100px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(100px); /* For Safari support */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315); /* Optional shadow for a subtle pop */
+}
+
+
+footer p {
+    margin: 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #8a8a8a;
+}
